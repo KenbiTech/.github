@@ -1,4 +1,4 @@
-### What changes does this PR introduce?
+### What changes does this PR introduce (please leave the links to the tickets)? Are they tested?
 
 ### Are you introducing a breaking change for a consumer? Are you reporting those changes on a ticket or coordinating both PRs?
 
