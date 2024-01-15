@@ -1,0 +1,31 @@
+version: 2
+registries:
+  codeartifact:
+    type: npm-registry
+    url: https://kenbi-artifacts-${{ secrets.DEPENDABOT_CODEARTIFACT_ACCOUNT }}.d.codeartifact.eu-central-1.amazonaws.com
+    token: ${{secrets.DEPENDABOT_CODEARTIFACT_TOKEN}}
+updates:
+ - package-ecosystem: "npm"
+   directory: "/"
+   schedule:
+      interval: "weekly"
+   registries:
+     - codeartifact
+ - package-ecosystem: "nuget"
+   directory: "/"
+   schedule:
+      interval: "weekly"
+   registries:
+     - codeartifact
+ - package-ecosystem: "gradle"
+   directory: "/"
+   schedule:
+      interval: "weekly"
+   registries:
+     - codeartifact
+ - package-ecosystem: "maven"
+   directory: "/"
+   schedule:
+      interval: "weekly"
+   registries:
+     - codeartifact
